@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, Code, Database, Globe, Smartphone, ChevronDown, Menu, X } from 'lucide-react';
+import profilePic from './images/profile.jpg';
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,10 +38,11 @@ const App = () => {
   };
 
   const projects = [
+    
     {
       title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.",
-      tech: ["React", "Node.js", "MongoDB", "Stripe", "JWT"],
+      description: "Full-stack e-commerce solution built with WordPress and WooCommerce. Features include user authentication, payment processing, and admin dashboard.",
+      tech: ["wordpress", "woocommerce", "php", "MySQL"],
       github: "#",
       demo: "#",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop"
@@ -56,7 +58,15 @@ const App = () => {
     {
       title: "Pharmacy Management System",
       description: "A comprehensive system to manage pharmacy operations including inventory, sales, and customer management.",
-      tech: ["Vue.js", "Laravel", "MySQL", "Bootstrap"],
+      tech: ["html/css", "php", "MySQL", "Bootstrap"],
+      github: "#",
+      demo: "#",
+      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop"
+    },
+    {
+      title: "Hospital Management System",
+      description: "A comprehensive system to manage hospital operations including patient records, appointments, and billing.",
+      tech: ["React.js", "Node.js", "MySQL", "Tailwind CSS"],
       github: "#",
       demo: "#",
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop"
@@ -71,13 +81,13 @@ const App = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-green-900 to-slate-900 text-white">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-black/20 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-              Systems Developer Portifolio
+            <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
+              Proffessional Portifolio
             </div>
             
             {/* Desktop Navigation */}
@@ -128,17 +138,17 @@ const App = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-purple-500/10"></div>
         <div className="text-center z-10 px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-cyan-400 via-green-400 to-green-400 bg-clip-text text-transparent">
               Lubega Ronald
             </span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-2xl mx-auto">
-            Full Stack Developer crafting beautiful, functional web experiences with modern technologies
+            Full Stack Developer crafting beautiful, functional web,desktop, mobile experiences with modern technologies
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <button 
               onClick={() => scrollToSection('projects')}
-              className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full font-semibold hover:scale-105 transition-transform duration-300"
+              className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-green-500 rounded-full font-semibold hover:scale-105 transition-transform duration-300"
             >
               View My Work
             </button>
@@ -189,11 +199,11 @@ const App = () => {
               </div>
             </div>
             <div className="relative">
-              <div className="w-80 h-80 mx-auto bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full p-1">
+              {/* <div className="w-80 h-80 mx-auto bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full p-1"> */}
                 <div className="w-full h-full bg-slate-900 rounded-full flex items-center justify-center">
-                  <div className="w-72 h-72 bg-gradient-to-br from-cyan-400/20 to-purple-400/20 rounded-full flex items-center justify-center">
-                    <Code size={80} className="text-cyan-400" />
-                  </div>
+                  <div className="w-72 h-72 bg-gradient-to-br from-cyan-400/20 to-green-400/20 rounded-full flex items-center justify-center">
+                    <img src={profilePic} alt="Lubega Ronald" className="w-64 h-64 rounded-full object-cover" />
+                  {/* </div> */}
                 </div>
               </div>
             </div>
@@ -287,7 +297,7 @@ const App = () => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <a 
               href="mailto:lubegaronaldkizza@gmail.com"
-              className="flex items-center px-8 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full font-semibold hover:scale-105 transition-transform duration-300"
+              className="flex items-center px-8 py-3 bg-gradient-to-r from-cyan-500 to-green-500 rounded-full font-semibold hover:scale-105 transition-transform duration-300"
             >
               <Mail size={20} className="mr-2" />
               Send Email
@@ -305,7 +315,7 @@ const App = () => {
 
       {/* Footer */}
       <footer className="py-8 text-center text-gray-400 border-t border-white/10">
-        <p>&copy; 2025 Lubega Ronald. Built with React & Tailwind CSS.</p>
+        <p>&copy; 2026 Lubega Ronald. Built with React & Tailwind CSS.</p>
       </footer>
     </div>
   );
