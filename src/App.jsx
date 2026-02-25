@@ -74,10 +74,10 @@ const App = () => {
   ];
 
   const skills = [
-    { name: "Frontend", icon: Code, items: ["React", "Vue.js", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind"] },
+    { name: "Frontend", icon: Code, items: ["React/React Native", "flutter/Dart", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind"] },
     { name: "Backend", icon: Database, items: ["Node.js", "Php", "Express", "Mysql", "PostgreSQL", "Sql Server"] },
-    { name: "Mobile", icon: Smartphone, items: ["React Native", "Flutter", "iOS", "Android"] },
-    { name: "Tools & Others", icon: Globe, items: ["Git", "Docker", "Wordpress", "Firebase", "REST APIs"] }
+    { name: "IT support", icon: Smartphone, items: ["System Integrations","System Designs and Conceptualisation", "Network & Server Administration", "L1 & L2 Technical Support"] },
+    { name: "Tools & Others", icon: Globe, items: ["Git", "Docker", "Wordpress", "Firebase", "REST APIs"] },
   ];
 
   return (
